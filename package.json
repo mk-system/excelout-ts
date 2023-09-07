@@ -1,6 +1,6 @@
 {
   "name": "@mk-system/excelout",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "excelout client for javascript and typescript",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
