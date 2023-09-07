@@ -8,6 +8,9 @@
     "strict": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
     "paths": {
       "@/*": ["./src/*"]
     }
