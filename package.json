@@ -1,8 +1,8 @@
 {
   "name": "excelout-ts",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "excelout client for javascript and typescript",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "tsc"
