@@ -1,5 +1,5 @@
 {
-  "name": "excelout-ts",
+  "name": "@mk-system/excelout",
   "version": "0.1.0",
   "description": "excelout client for javascript and typescript",
   "main": "dist/index.js",
