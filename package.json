@@ -1,0 +1,19 @@
+{
+  "name": "excelout-ts",
+  "version": "1.0.0",
+  "description": "excelout client for javascript and typescript",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "MK System Co.,Ltd.",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.5.0"
+  }
+}
