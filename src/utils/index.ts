@@ -1,4 +1,4 @@
-import { Request, FormattedRequest } from "@/types";
+import { Request, FormattedRequest } from "../types";
 
 export const mapRequest = (request: Request): FormattedRequest => {
   const { sheetName, cell } = request;

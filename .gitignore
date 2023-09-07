@@ -20,3 +20,5 @@
 
 # typescript
 *.tsbuildinfo
+
+tmp

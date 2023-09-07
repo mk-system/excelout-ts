@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from "axios";
-import { Request, FormattedRequest } from "@/types";
-import { mapRequest } from "@/utils";
+import { Request, FormattedRequest } from "../types";
+import { mapRequest } from "../utils";
 
 export type CreateDocumentOptions = {
   host: string;

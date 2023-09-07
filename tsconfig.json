@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "commonjs",
+    "module": "ESNext",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -10,9 +10,9 @@
     "skipLibCheck": true,
     "declaration": true,
     "sourceMap": true,
-    "outDir": "./dist",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "outDir": "./tmp",
+    "baseUrl": "./",
+    "moduleResolution": "Node",
+    "paths": {}
   }
 }
