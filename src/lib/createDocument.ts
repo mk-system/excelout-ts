@@ -2,13 +2,13 @@ import axios, { AxiosResponse } from "axios";
 import { Request, FormattedRequest } from "@/types";
 import { mapRequest } from "@/utils";
 
-interface Options {
+export type CreateDocumentOptions = {
   host: string;
 }
 
 const MAX_REQUESTS = 100000;
 
-export const createDocument = async (requests: Request[], options: Options) => {
+export const createDocument = async (requests: Request[], options: CreateDocumentOptions) => {
   const formattedRequests: FormattedRequest[] = requests.map(mapRequest);
 
   if (formattedRequests.length > MAX_REQUESTS) {
