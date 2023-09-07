@@ -8,7 +8,7 @@ export type CreateDocumentOptions = {
 
 const MAX_REQUESTS = 100000;
 
-export const createDocument = async (requests: Request[], options: CreateDocumentOptions) => {
+export const createDocument = async (filename: string, requests: Request[], options: CreateDocumentOptions) => {
   const formattedRequests: FormattedRequest[] = requests.map(mapRequest);
 
   if (formattedRequests.length > MAX_REQUESTS) {
@@ -21,7 +21,7 @@ export const createDocument = async (requests: Request[], options: CreateDocumen
 
   const response: AxiosResponse = await (async () => {
     return await axios.post(`${options.host}/download`, {
-      file: "server_file_name",
+      file: filename,
       requests: formattedRequests,
     });
   })();
