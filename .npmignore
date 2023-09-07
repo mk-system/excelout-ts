@@ -2,4 +2,5 @@
 /src
 tsconfig.json
 pnpm-lock.yaml
+/tmp
 
