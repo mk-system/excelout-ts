@@ -19,10 +19,12 @@ export const createDocument = async (filename: string, requests: Request[], opti
     throw new Error(`${MAX_REQUESTS} exceeded`);
   }
 
-  const response: AxiosResponse = await (async () => {
+  const response: AxiosResponse<ArrayBuffer> = await (async () => {
     return await axios.post(`${options.host}/download`, {
       file: filename,
       requests: formattedRequests,
+    }, {
+      responseType: "arraybuffer",
     });
   })();
 
